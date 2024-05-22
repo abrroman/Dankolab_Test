@@ -5,25 +5,25 @@ using UnityEngine.UI;
 namespace Dankolab.Test {
     public class AmountSlider : MonoBehaviour {
         [SerializeField]
-        private Slider slider;
+        private Slider _slider;
 
         [SerializeField]
-        private TextMeshProUGUI valueText;
-
-        private void Awake() {
-            if (!slider) {
-                slider = GetComponent<Slider>();
-            }
-
-            slider.value = Settings.DEFAULT_AMOUNT;
-        }
-
-        void Update() {
-            valueText.text = slider.value.ToString();
-        }
+        private TextMeshProUGUI _valueText;
 
         public void OnValueChanged() {
-            Settings.SetElementsAmount((int)slider.value);
+            Settings.SetElementsAmount((int)_slider.value);
+        }
+
+        private void Awake() {
+            if (!_slider) {
+                _slider = GetComponent<Slider>();
+            }
+
+            _slider.value = Settings.DEFAULT_AMOUNT;
+        }
+
+        private void Update() {
+            _valueText.text = _slider.value.ToString();
         }
     }
 }

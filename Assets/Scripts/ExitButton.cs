@@ -3,11 +3,11 @@ using UnityEngine;
 namespace Dankolab.Test {
     public class ExitButton : MonoBehaviour {
         [SerializeField]
-        private GameObject mainMenu;
+        private GameObject _mainMenu;
 
         public void OnExitButtonClick() {
             gameObject.SetActive(false);
-            mainMenu.SetActive(true);
+            _mainMenu.SetActive(true);
         }
     }
 }

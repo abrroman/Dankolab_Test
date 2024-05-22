@@ -3,20 +3,19 @@ using UnityEngine;
 namespace Dankolab.Test {
     public class MainMenuButtons : MonoBehaviour {
         [SerializeField]
-        private GameObject settingsMenu;
+        private GameObject _settingsMenu;
 
         [SerializeField]
-        private GameObject scrollGame;
-
+        private GameObject _scrollGame;
 
         public void OnPlayButtonClick() {
             gameObject.SetActive(false);
-            scrollGame.SetActive(true);
+            _scrollGame.SetActive(true);
         }
 
         public void OnSettingsButtonClick() {
             gameObject.SetActive(false);
-            settingsMenu.SetActive(true);
+            _settingsMenu.SetActive(true);
         }
     }
 }

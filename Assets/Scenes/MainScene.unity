@@ -1531,8 +1531,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43546b64d090fca4d9a4db5eb328f227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 1030612884}
-  valueText: {fileID: 239820723}
+  _slider: {fileID: 1030612884}
+  _valueText: {fileID: 239820723}
 --- !u!1 &1163715131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2017,8 +2017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0309b816419fc5645858d535f8774217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settingsMenu: {fileID: 1786796926}
-  scrollGame: {fileID: 1353767457}
+  _settingsMenu: {fileID: 1786796926}
+  _scrollGame: {fileID: 1353767457}
 --- !u!1 &1353767457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,7 +2070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45bd757e8435511498d42494e5c6cbc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: {fileID: 1347210149}
+  _mainMenu: {fileID: 1347210149}
 --- !u!1 &1382699893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,10 +2910,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f5e718d5c8a6274ba316e4ba0e469e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollButton: {fileID: 4315476003079395923, guid: aebd80ad8c1268c43ae53b974e936727,
+  _scrollButton: {fileID: 4315476003079395923, guid: aebd80ad8c1268c43ae53b974e936727,
     type: 3}
-  scrollContainer: {fileID: 1382699893}
-  scrollElements: []
+  _scrollContainer: {fileID: 1382699893}
+  _scrollElements: []
 --- !u!1 &1786796926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,7 +2968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45bd757e8435511498d42494e5c6cbc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: {fileID: 1347210149}
+  _mainMenu: {fileID: 1347210149}
 --- !u!114 &1786796929
 MonoBehaviour:
   m_ObjectHideFlags: 0

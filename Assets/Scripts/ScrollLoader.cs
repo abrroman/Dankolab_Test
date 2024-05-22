@@ -4,22 +4,22 @@ using UnityEngine;
 namespace Dankolab.Test {
     public class ScrollLoader : MonoBehaviour {
         [SerializeField]
-        private GameObject scrollButton;
+        private GameObject _scrollButton;
 
         [SerializeField]
-        private GameObject scrollContainer;
+        private GameObject _scrollContainer;
 
         [SerializeField]
-        private List<GameObject> scrollElements;
+        private List<GameObject> _scrollElements;
 
         private void OnEnable() {
             for (var i = 0; i < Settings.ElementsAmount; i++) {
-                scrollElements.Add(Instantiate(scrollButton, scrollContainer.transform));
+                _scrollElements.Add(Instantiate(_scrollButton, _scrollContainer.transform));
             }
         }
 
         private void OnDisable() {
-            foreach (var elem in scrollElements) {
+            foreach (var elem in _scrollElements) {
                 Destroy(elem);
             }
         }
